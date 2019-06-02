@@ -1,0 +1,19 @@
+/* miniprogram/pages/info/info.wxss */
+.userInfo{
+  width: 100%;
+  margin: 0 auto;
+}
+.wechatLogin{
+  margin: 0 auto;
+  width:650rpx;
+  border-radius: 45rpx;
+  background-color: #669999;
+  margin-top: 290rpx;
+  margin-bottom: 50rpx;
+}
+.phoneLogin{
+  margin: 0 auto;
+  width:650rpx;
+  border-radius: 45rpx;
+  background-color: #669999;
+}

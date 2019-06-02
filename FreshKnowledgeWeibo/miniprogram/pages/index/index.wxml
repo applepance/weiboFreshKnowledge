@@ -1,0 +1,10 @@
+<block wx:for="{{mainNewsList}}" wx:key="{{index}}" >
+        <card isOld= "{{item.isOld}}" 
+              time = "{{item.time}}"
+              title="{{item.title}}"
+              focusNum="{{item.focusNum}}"
+              imgUrl="{{item.imgUrl}}"
+        >
+        </card>
+</block>  
+<tabbar isIndex="true"></tabbar>

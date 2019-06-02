@@ -1,0 +1,9 @@
+<view class='userInfo'>
+  <view>
+    <button  bindtap='wechatLogin' open-type='getUserInfo' class='wechatLogin'>微信验证登录</button>
+  </view>
+  <view>
+      <button bindtap='phoneLogin' class='phoneLogin'>手机验证登录</button>
+  </view>
+</view>
+<tabbar></tabbar>

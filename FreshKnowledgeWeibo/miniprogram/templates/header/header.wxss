@@ -1,0 +1,27 @@
+.header {
+  width: 100%;
+  background-color: #fff;
+}
+.text-left {
+  width: 500rpx;
+  float: left;
+  background-color: #fff;
+}
+.title {
+  color: #292929;
+  font-size: 50rpx;
+}
+.text {
+  color: #b1b1b1;
+  font-size: 20rpx;
+}
+.img-right {
+  float: right;
+  border-radius: 20rpx;
+  width: 250rpx;
+  height: 250rpx;
+}
+.img-right image {
+  width: 250rpx;
+  height: 250rpx;
+}

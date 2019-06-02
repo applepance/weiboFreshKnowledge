@@ -1,0 +1,46 @@
+<!-- components/content/content.wxml -->
+<view class="content">
+  <view class="title">
+    <text>{{title}}</text>
+  </view>
+  <view class="main">
+    <block wx:for="{{list}}" wx:key="index">
+      <view class="main-item">
+        <navigator class="news-item">
+          <view class="time text">{{item.time}}</view>
+          <view class="news {{isFolded ? 'ellipsis' : 'unellipsis'}}">{{item.content}}</view>
+        </navigator>
+        <view class="state" bind:tap="change">{{isFolded ? "全文" : "收起"}}</view>
+        <view class="image">
+          <block wx:for="{{item.img}}" wx:for-item="image" wx:key="index">
+            <view class="{{item.img.length > 1 ? 'more' : 'one'}}">
+              <view>
+                <image src="{{image}}" />
+              </view>
+            </view>
+          </block>
+        </view>
+        <view class="from text">
+          <view>来自</view>
+          <view class="from-image">
+            <image src="{{item.userImg}}" />
+          </view>
+          <view class="from-name">{{item.userName}}</view>
+        </view>
+        <view class="icons text">
+          <view class="like">
+            <icon type="dianzan" color="gray" size="30"></icon>
+            {{item.like}}
+          </view>
+          <view class="comment">
+            <icon type="pinglun" color="gray" size="30"></icon>
+            {{item.comment}}
+          </view>
+          <view class="share">
+            <icon type="fenxiang" color="gray" size="30"></icon>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

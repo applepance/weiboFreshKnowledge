@@ -1,0 +1,20 @@
+<template name="header">
+    <block  wx:for="{{header}}" wx:key="index">
+        <view class="header">
+          <view class="text-left">
+            <view class="title">
+              <text>啊杀杀杀色的就恢复阿富汗法兰克福回家啊</text>
+            </view>
+            <view class="authorau">
+              <text>创建者：头条新闻</text>
+            </view>
+            <view class="attention text">
+              <text>42663人关注</text>
+            </view>
+          </view>
+          <view class="img-right">
+            <image src="http://pic.58pic.com/58pic/15/14/29/47e58PICQUR_1024.jpg" />
+          </view>
+        </view>
+    </block>
+</template>

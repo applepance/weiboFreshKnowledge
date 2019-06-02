@@ -1,0 +1,10 @@
+<!-- miniprogram/pages/news/news.wxml -->
+<view class="container">
+  <block>
+    <header des = "{{des}}" userName = "{{userName}}" attention = "{{attention}}" picUrl="{{picUrl}}"></header> 
+
+    <content title="热点" list="{{list}}"></content>
+  </block>
+  
+</view>
+<tabbar isIndex = "true" isInner="true"></tabbar>

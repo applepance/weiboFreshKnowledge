@@ -1,0 +1,40 @@
+/* components/header.wxss */
+.text {
+  color: #b1b1b1;
+  font-size: 20rpx;
+}
+.header {
+  width: 100%;
+  background-color: #fff;
+  overflow: hidden;
+  border-bottom: 15rpx solid #f4f4f4;
+}
+.text-left {
+  width: 500rpx;
+  float: left;
+  background-color: #fff;
+}
+.title {
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+  width: 500rpx;
+  color: #292929;
+  font-size: 35rpx;
+  line-height: 50rpx;
+}
+.author,.attention {
+  margin-top: 20rpx;
+  margin-left: 30rpx;
+}
+.img-right {
+  float: right;
+  width: 250rpx;
+  height: 250rpx;
+}
+.img-right image {
+  margin-top: 30rpx;
+  margin-left: 70rpx;
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 30rpx;
+}

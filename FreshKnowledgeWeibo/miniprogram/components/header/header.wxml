@@ -1,0 +1,11 @@
+<!-- components/header.wxml -->
+<view class="header">
+  <view class="text-left">
+    <view class="title">{{des}}</view>
+    <view class="author text">创建者：{{userName}}</view>
+    <view class="attention text">{{attention}}人关注</view>
+  </view>
+  <view class="img-right">
+    <image src="{{picUrl}}" />
+  </view>
+</view>

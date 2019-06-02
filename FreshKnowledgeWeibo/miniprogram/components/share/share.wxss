@@ -1,0 +1,103 @@
+/* components/share/share.wxss */
+/* miniprogram/pages/share/share.wxss */
+.share-content {
+    box-sizing: border-box;
+    position: fixed;
+    left: 80rpx;
+    height: 700rpx;
+    width: 590rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 30rpx 45rpx 40rpx;
+    opacity: 0.5;
+}
+.share-content .headImg {
+    height: 125rpx;
+    width: 125rpx;
+    border-radius: 30rpx;
+    background-color: #eeeeee;
+}
+.share-content .headTitle {
+    display: block;
+    height: 70rpx;
+    line-height: 70rpx;
+    font-weight: 600rpx;
+    font-size: 34rpx;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width:500rpx;
+}
+.share-content .focusNum {
+    display: block;
+    font-size: 26rpx;
+    color: #fff;
+}
+.share-content .QRcode {
+    box-sizing: border-box;
+    height: 328rpx;
+    width: 288rpx;
+    padding: 20rpx 0;
+    overflow: hidden;
+}
+.share-content .share-content-LongPress{
+    display: block;
+    margin-bottom: 32rpx;
+    font-size: 26rpx;
+    color: #fff;
+}
+.share-content .share-content-info{
+    font-size: 20rpx;
+    color: #fff;
+}
+.share-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 246rpx;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+.shareText {
+    height: 120rpx;
+    line-height: 120rpx;
+    font-size: 28rpx;
+    text-align: center;
+}
+.share-bottom .shareBar {
+    width: 100%;
+    height: 126rpx;
+    display: flex;
+}
+.shareBar .shareBar-left, .shareBar-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 26rpx;
+    background-color: #ffffff; 
+}
+.shareBar .shareBtn {
+     justify-content: flex-start !important;
+}
+
+.img{
+  width: 35rpx;
+  height: 35rpx;
+}
+  button::after{
+  border: none;
+}
+.bg {
+  background-color: #fff;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}

@@ -1,0 +1,29 @@
+<!-- components/share/share.wxml -->
+<view wx:if="{{show}}">
+    <view class="share-window" bindtap="closeShare">
+        <view class="share-content">
+            <!-- <image class="headImg" mode="aspectFill" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559378430273&di=cc130a51d8149d92b714172761eeade8&imgtype=0&src=http%3A%2F%2Fimg5.pcpop.com%2FArticleImages%2F730x547%2F4%2F4314%2F00431432227746047.jpg"></image> -->
+            <image class="headImg" mode="aspectFill" src="{{data.picUrl}}"></image>
+            <text class="headTitle">{{data.title}}</text>
+            <text class="focusNum">人关注</text>
+            <image class="QRcode" src="./erweima.jpg"></image>
+            <text class="share-content-LongPress">长按二维码，查看精选微博</text>
+            <text class="share-content-info">内容由微博旗下，鲜知app整理并提供</text>
+        </view>
+        <view class='bg' bindtap="closeShare"></view>
+    </view>
+    <!-- </view> -->
+    <view class="share-bottom">
+        <view class="shareText">分享</view>
+        <view class="shareBar">
+            <view class="shareBar-left" bind:tap="saveImageTo">
+                <image class="baocun img" src="./xiazai.png" />
+                <text>保存图片</text>
+            </view>
+            <button class="shareBar-right" open-type="share">
+                <image class="zhuanfa img" src="./fenxiang.png" />
+                <text class="shareBtn-font">转发给好友</text>
+            </button>
+        </view>
+    </view>
+</view>

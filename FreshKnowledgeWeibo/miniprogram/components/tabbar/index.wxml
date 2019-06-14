@@ -5,7 +5,7 @@
     </view>
     <block wx:if="{{isInner}}">
         <view class="item-right" style="color:#b1b1b1" bindtap="goShare">
-        <icon type="fenxiang" color="gray" size="45"></icon>
+        <icon type="fenxiang" color="black" size="45"></icon>
             <text class="2">分享</text>
         </view>
     </block>

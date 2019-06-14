@@ -9,14 +9,18 @@ Page({
   },
   wechatLogin(res, err) {
     wx.getSetting({
-      success(res) {
-        if (res.authSetting['scope.userInfo']) {
+      success: (res) => {
+        if (res.authSetting['scope.userInfo']) {//授权了，可以获取用户信息了
           wx.getUserInfo({
-            success: function(res) {
+            success: (res) => {
               wx.navigateTo({
-                url: '/pages/index/index',
+                url: '../index/index',
               })
             }
+          })
+        } else {//未授权，跳到授权页面
+          wx.redirectTo({
+            url: '../info/info',//授权页面
           })
         }
       }

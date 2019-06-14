@@ -42,10 +42,27 @@ Component({
         url: '../../pages/news/news'
       })
     },
-    goShare() {
-      wx.navigateTo({
-        url: '../../pages/share/share'
-      })
+    onShareAppMessage: function() {
+      return {
+        title: '微博鲜知',
+        path: '/pages/index/index',
+        imageUrl: '',
+        success: function(shareTickets) {
+          if (shareTickets.errMsg == 'shareAppMessage:ok') {
+            wx.showModal({
+              title: '提示',
+              content: '分享成功',
+            })
+          }
+        },
+        fail: function(res) {
+          console.log(res + '失败');
+          // 转发失败
+        },
+        complete: function(res) {
+          // 不管成功失败都会执行
+        }
+      }
     }
   }
 })

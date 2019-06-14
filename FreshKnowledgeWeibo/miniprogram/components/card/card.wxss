@@ -61,3 +61,6 @@
     width: 34rpx;
     margin-right: 10rpx;
 }
+.card-share{
+  width: 670rpx;
+}
